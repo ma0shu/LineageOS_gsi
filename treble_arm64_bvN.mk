@@ -1,9 +1,8 @@
 TARGET_GAPPS_ARCH := arm64
 include build/make/target/product/aosp_arm64.mk
 $(call inherit-product, device/phh/treble/base.mk)
-
-
 $(call inherit-product, device/phh/treble/lineage.mk)
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 PRODUCT_NAME := treble_arm64_bvN
 PRODUCT_DEVICE := tdgsi_arm64_ab
